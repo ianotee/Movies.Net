@@ -8,13 +8,14 @@
     --primary-color:black;
     --secondary-color: #373b69;
 }
-
+  @media All and (max-width: 1199px){
 body{
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     margin: 0;
      max-width: 100%;
 
+}
 }
 
 
@@ -242,7 +243,7 @@ main{
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-width: 1199px) {
+  @media All and (max-width: 1199px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
       font-size: 40px;
