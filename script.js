@@ -85,6 +85,8 @@ const genres = [
     }
   ]
 
+document.getElementsByTagName("body")[0].style.overflowY = "auto";
+  
 const main = document.getElementById('main');
 const form =  document.getElementById('form');
 const search = document.getElementById('search');
