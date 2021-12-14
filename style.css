@@ -13,6 +13,8 @@ body{
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     margin: 0;
+     max-width: 100%;
+
 }
 
 
@@ -21,13 +23,13 @@ header{
     display:flex;
     justify-content: flex-end;
     background-color: rgba(150, 4, 19,0.8);
+      overflow-y: auto;
 }
 
 img{
     align-items:right;
     
 }
-
 .search{
     background-color: transparent;
     border: 2px solid var(--primary-color);
@@ -36,6 +38,7 @@ img{
     font-size: 1rem;
     color:#fff;
     font-family: inherit;
+}
 }
 
 .search:focus{
@@ -47,13 +50,22 @@ img{
     color: #7378c5;
 }
 
+
+ 
+  #header {
+    left: -300px;
+}
+
+
+
+
 main{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.movie {
+         
+             .movie {
     width: 300px;
     margin: 1rem;
     border-radius: 3px;
@@ -61,6 +73,7 @@ main{
     background-color: darkred;
     position:relative;
     overflow: hidden;
+}
 }
 
 
@@ -229,7 +242,7 @@ main{
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 1199px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
       font-size: 40px;
